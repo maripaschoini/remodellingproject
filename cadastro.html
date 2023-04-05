@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: #fdc2c2;
+            border-radius: 10px;
+            height: 65px;
+            width: auto;
+        }
+
+        /*      EFEITO HOVER    */
+
+        header a {
+            text-decoration: none;
+            color: #FFFFFF;
+            float: right;
+            padding: 7px;
+            padding-top: 15px;
+            font-size: 20px;
+            position: relative;
+        }
+
+        header a::after {
+            content: " ";
+            width: 0%;
+            height: 2px;
+            background-color: #f24444;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.5s ease-in-out;
+        }
+
+        header a:hover::after {
+            width: 100%;
+        }
+
+        header img {
+            width: 50px;
+            padding-left: 15px;
+            padding-top: 8px;
+        }
+
+        h1 {
+            background-color: #faecf0;
+            height: 100px;
+            width: auto;
+            color: #f24444;
+            text-align: center;
+            padding-top: 40px;
+            font-size: 36.5px;
+        }
+
+        div img {
+            display: block;
+            width: 30px;
+            margin: auto;
+            padding-top: 10px;
+
+        }
+
+        div p#sub {
+            font-size: 20px;
+            text-align: center;
+            color: #f24444;
+
+        }
+
+        nav input {
+            border-radius: 20px;
+            border-color: #000;
+        }
+
+        /* BOTÃO */
+
+        button {
+            display: block;
+            background-color: #da4d4e;
+            font-size: 15px;
+            color: #FFFFFF;
+            border-radius: 20px;
+            border-color: #da4d4e;
+            padding: 5px;
+            width: 150px;
+            margin: auto;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button:hover {
+            background-color: #FFF;
+            color: #f24444;
+
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background-color: #fdc2c2;
+            z-index: -1;
+            transition: 0.5s;
+
+        }
+
+        button:hover::before {
+            height: 100%;
+        }
+
+        p#legenda {
+            font-size: 10px;
+            text-align: center;
+        }
+
+        nav {
+            /* box-sizing: 500px; */
+            background-color: #fdc2c2;
+            padding: 45px;
+        }
+
+        div {
+            box-sizing: border-box;
+            width: 350px;
+            height: 400px;
+            background-color: #FFFFFF;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 25px;
+            margin-top: 5px;
+            /* text-align: center; */
+
+        }
+
+        label {
+            padding-left: 45px;
+
+        }
+
+        input {
+            display: block;
+            margin: auto;
+            width: 250px;
+            height: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header - mesmo do home -->
+    <header>
+        <img src="imagem/pinterest-logo-p-png-0.png" alt="logo">
+        <a href="business.html">Business</a>
+        <a href="entrar.html">Entrar</a>
+        <a href="cadastro.html">Cadastro</a>
+    </header>
+
+    <h1> CADASTRO </h1>
+
+    <nav>
+        <div>
+            <img src="imagem/pinterest-logo-p-png-0.png">
+            <p id="sub"><b> Criando sua conta </b> </p>
+
+            <form method="post" action="entrar.html">
+
+                <p><label> Nome</label>
+                    <br>
+                    <input name="nome" required placeholder=" seu nome">
+                <p><label> Email</label>
+                    <br>
+                    <input name="email" required placeholder=" nome@xxxx.com">
+                <p><label> Senha</label>
+                    <br>
+                    <input name="senha" required placeholder="  no mínimo 8 dígitos">
+
+                <p><button> Cadastrar </button></p>
+                <p id="legenda"> Ao continuar, você concorda com os termos de serviço. </p>
+
+            </form>
+        </div>
+    </nav>
+
+
+</body>
+
+</html>

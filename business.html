@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+
+        * {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+        }
+      
+        header {
+            background-color: #fdc2c2;
+            border-radius: 10px;
+            height: 65px;
+            width:auto;
+        }
+           /*      EFEITO HOVER    */
+
+    header a{
+        text-decoration: none;
+        color: #FFFFFF;
+        float: right;
+        padding: 7px;
+        padding-top: 15px;
+        font-size: 20px;
+        position: relative;
+    }
+    header a::after{
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background-color: #f24444;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease-in-out;
+    }
+    header a:hover::after{
+        width: 100%;
+    }
+        header img{
+            width: 50px;
+            padding-left: 15px;
+            padding-top: 8px;
+        }
+        h1{
+        background-color: #faecf0;
+        height: 120px;
+        width: auto;
+        color: #f24444;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 36.5px;
+        }
+        h2{
+            color: #f24444;
+            text-align: center;
+            margin-top: 60px;
+        }
+        div{
+            font-size: 15px;
+            box-sizing: border-box;
+            background-color: #faecf0;
+            width: 300px;
+            height: 250px;
+            border-radius: 25px;
+            padding: 10px;
+            display: inline-block;
+        }
+        p#centro {
+            text-align: center;
+        }
+        div#um{
+            margin-left: 35px;
+            position: relative;
+            top: 50px;
+        }
+        div#dois{
+            margin-left: 180px;
+            margin-right: 150px;
+            position: relative;
+            top: 30px;
+            /* left: auto;
+            right: auto; */
+            
+        }
+        div#tres{
+            margin-right: 35px;
+            position: relative;
+            top: 50px;
+            float: right;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <header> 
+        <img src="imagem/pinterest-logo-p-png-0.png" alt="logo">   
+        <a href="business.html" >Business</a>
+        <a href="entrar.html" >Entrar</a>
+        <a href="cadastro.html" >Cadastro</a>
+    </header>
+
+    <nav>
+        <h1> BUSINESS </h1>
+        <h2> Seus objetivos, do seu jeito. </h2>
+
+      
+        <div id="um">
+            <p id="centro">Criadores de conteúdo </p>
+            <br>
+            <p>Faça parte de uma comunidade que compartilha as mesmas paixões e
+               ganhe dinheiro fazendo o que você ama. O conteúdo no Pinterest nunca expira,
+               então você continua alcançando mais pessoas com o passar do tempo.</p>
+                              
+        </div>
+        <div id="dois">
+            <p id="centro">Lojas</p>
+            <br>
+            <p>Quem compra no Pinterest gasta 50% mais por mês do que quem usa outras plataformas.
+               2 Use os catálogos e os anúncios de shopping para alcançar as pessoas que estão prontas para comprar.</p>
+        </div>
+        <div id="tres">
+            <p id="centro">Anunciantes</p>
+            <br>
+            <p>Use o Pinterest Ads para atingir seus objetivos de marketing, como reconhecimento da 
+                marca, consideração e conversões. Combine diferentes formatos com segmentações avançadas 
+                para criar campanhas bem-sucedidas.</p>
+        </div>
+       
+
+    </nav>
+    
+</body>
+</html>
